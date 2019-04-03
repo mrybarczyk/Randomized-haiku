@@ -25,6 +25,10 @@ def menu():
         secondpoem()
     elif (odp == 'E' or odp == 'e'):
         pass
+    else:
+        print('Nonexistent option.')
+        input('Press any key to continue...')
+        menu()
 
 
 def firstpoem():
@@ -40,7 +44,7 @@ def firstpoem():
     print(secondline[b])
     print(thirdline[c])
 
-    input("Press any key to continue...")
+    input('Press any key to continue...')
     menu()
 
 
@@ -75,7 +79,8 @@ def secondpoem():
     print(secondline[b])
     print(thirdline[c])
 
-    input("Press any key to continue...")
+    input('Press any key to continue...')
     menu()
+
 
 menu()
