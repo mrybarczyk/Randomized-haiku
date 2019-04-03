@@ -32,23 +32,39 @@ def menu():
 
 
 def firstpoem():
-    firstline = ['maska opadła', 'maska wraca', 'maska skruszała']
-    secondline = ['zagubione ciało', 'zagubione serce', 'zagubiony umysł']
-    thirdline = ['milknie i zanika', 'krzyczy w ciszy', 'cieszy się bólem']
+    cls()
+    
+    firstLineFirst = ['maska opadła', 'maska wraca', 'maska skruszała']
+    secondLineFirst = ['zagubione ciało', 'zagubione serce', 'zagubiony umysł']
+    thirdLineFirst = ['milknie i zanika', 'krzyczy w ciszy', 'cieszy się bólem']
+
+    one = [firstLineFirst, secondLineFirst, thirdLineFirst]
+
+    firstLineSecond = ['na starość', 'w młodości', 'w sukni ślubnej']
+    secondLineSecond = ['dokarmiam gołębie -', 'polubiłam balet - ', 'straciłam kochanka -']
+    thirdLineSecond = ['taka kolej rzeczy','chyba warto tańczyć','długo szukałam celu']
+
+    two = [firstLineSecond, secondLineSecond, thirdLineSecond]
+
+    poems = [one, two]
+
+    n = int(random.uniform(0, 2))
 
     a = int(random.uniform(0, 3))
     b = int(random.uniform(0, 3))
     c = int(random.uniform(0, 3))
 
-    print(firstline[a])
-    print(secondline[b])
-    print(thirdline[c])
+    print(poems[n][0][a])
+    print(poems[n][1][b])
+    print(poems[n][2][c])
 
     input('Press any key to continue...')
     menu()
 
 
 def secondpoem():
+    cls()
+
     firstline = ['pierwsze kwiaty wiśni -', 'pierwsze płatki śniegu -', 'pierwsze złote liście -', 'słońce parzące twarz -']
     secondline = ['wyglądam za okno', 'otwieram drzwi', 'podlewam kwiaty', 'czytając powieść']
     thirdline = ['myślę o wczoraj', 'myślę o jutrze', 'myślę o nim', 'myślę o domu']
